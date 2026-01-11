@@ -231,6 +231,7 @@ color: #434455;
 .team-section {
   padding: 120px 0; /* відступи всередині секції */
   background-color: #f4f4fd;
+  margin: 0 auto;
 }
 
 .text-title-team-section{
@@ -246,13 +247,12 @@ text-transform: capitalize;
 }
 
 .team-list {
-  display: flex;       /* горизонтальне розташування елементів */
-  gap: 24px;           /* відстань між елементами */
+  display: flex;        /* Горизонтальне розташування елементів */
+  gap: 24px;            /* Відступи між елементами */
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
-  justify-content: center;
-  flex-wrap: wrap;     /* для адаптивності */
+  flex-wrap: wrap;      /* Адаптивність на маленьких екранах */
 }
 
 .team-item {
@@ -266,7 +266,8 @@ text-transform: capitalize;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  text-align: center;    /* Вирівнювання по центру */
+  margin-bottom: 8px;    /* Відступ між заголовком і параграфом */
 }
 
 .team-info {
@@ -281,6 +282,7 @@ text-transform: capitalize;
   letter-spacing: 0.02em;
   color: #434455;
   margin: 0;
+    text-align: center; 
 }
 
 
