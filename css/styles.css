@@ -22,8 +22,9 @@ a{
 
 .container{
   max-width: 1158px;
-  margin: 0 auto;
   padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
   text-align: center;
 }
 
@@ -125,22 +126,18 @@ letter-spacing: 0.02em;
 color: #f4f4fd;
 }
 
-
-
-
-
-
-
-
 /* section 1 */
-
-
 
 .hero-section{
   background-color: #2e2f42;
   padding: 188px 0;
 }
-
+.hero-container{
+ max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
 
 .headline-text {
   max-width: 496px;
@@ -154,13 +151,10 @@ color: #f4f4fd;
   text-align: center;
 }
 
-
-
 .button-box {
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-
 
 .hero-button {
   display: block;
@@ -180,18 +174,37 @@ color: #f4f4fd;
   color: #ffffff;
 }
 
-
 .button-box:hover,
 .button-box:focus {
   background-color: #404BBF;
 }
 
-.advantages-section
+/* section 2 */
 
-.advantages-list{
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
-.advantages-item
+
+.advantages-section {
+  padding: 120px 0; /* відступи всередині секції */
+}
+
+.advantages-list {
+  display: flex; /* горизонтальне розміщення елементів */
+  gap: 24px;     /* відстань між елементами списку */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 
 .advantages-subtitle {
 font-weight: 500;
@@ -199,6 +212,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px; /* відступ між заголовком і параграфом */
 }
 
 .advantages-text {
