@@ -205,6 +205,9 @@ color: #f4f4fd;
   list-style: none;
 }
 
+.advantages-item {
+  flex-basis: calc((100% - 3 * 24px) / 4); /* ширина пункту */
+}
 
 .advantages-subtitle {
 font-weight: 500;
@@ -223,8 +226,11 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
-.team-section{
-background-color: #f4f4fd;
+/* section 3 */
+
+.team-section {
+  padding: 120px 0; /* відступи всередині секції */
+  background-color: #f4f4fd;
 }
 
 .text-title-team-section{
@@ -236,23 +242,68 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
-.team-list{
-  background-color: #FFFFFF
+.team-list {
+  display: flex;       /* горизонтальне розташування елементів */
+  gap: 24px;           /* відстань між елементами */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;     /* для адаптивності */
 }
-.team-item{
+
+.team-item {
+  flex-basis: calc((100% - 3 * 24px) / 4); /* ширина кожного елемента */
+  border-radius: 0 0 4px 4px;             /* нижні заокруглення */
   background-color: #ffffff;
 }
 
-.team-names-text{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+.team-names-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+
+.team-info {
+  padding: 32px 0;      /* відступи всередині картки */
+  text-align: center;
+}
+
+.team-position-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .portfolio-section {
   background-color: #f4f4fd;
