@@ -24,6 +24,7 @@ a{
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  display: flex;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -100,8 +101,10 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-
 }
+
+/* footer */
+
 .page-footer{
   background-color: #2e2f42;
 }
@@ -111,8 +114,6 @@ color:#f4f4fd;}
 .footer-logo{
   margin-bottom: 16px;
 }
-
-
 .footer-text {
 font-weight: 400;
 font-size: 16px;
@@ -128,10 +129,24 @@ color: #f4f4fd;
 
 
 
-
+/* section 1 */
 .background-color {
   background-color: #2e2f42;
 }
+
+.sec1-container{
+width: auto;
+height: 600px;
+display: flex;
+align-items:center;
+}
+
+
+
+
+
+
+
 
 .headline-text {
   font-weight: 700;
@@ -146,6 +161,13 @@ color: #f4f4fd;
   background-color: #4D5AE5;
 }
 
+.button-container{
+padding-top: 48px 0;
+margin-left: 636px 0;
+margin-right: 635px 0;
+margin-bottom: 188px 0;
+}
+
 .button-box {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -157,6 +179,8 @@ color: #f4f4fd;
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
 }
 
 .button-box:hover,
