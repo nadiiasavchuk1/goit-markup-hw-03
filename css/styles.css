@@ -247,19 +247,25 @@ text-transform: capitalize;
 }
 
 .team-list {
-  display: flex;        /* Горизонтальне розташування елементів */
-  gap: 24px;            /* Відступи між елементами */
-  list-style: none;
+  display: flex;   
+  gap: 24px;            
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;      /* Адаптивність на маленьких екранах */
+  flex-wrap: nowrap;
+  justify-content: center;     
 }
 
 .team-item {
   flex-basis: calc((100% - 3 * 24px) / 4); /* ширина кожного елемента */
   border-radius: 0 0 4px 4px;             /* нижні заокруглення */
   background-color: #ffffff;
+  width: 264px;       c
+  height: 380px;       
+  padding: 0px 0px 32px;  
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
+
 
 .team-names-text {
   font-weight: 500;
@@ -344,3 +350,30 @@ text-transform: capitalize;
   text-align: center;
   color: #434455;
 }
+
+
+/* footer */
+
+.page-footer{
+   padding: 100px 0;
+  background-color: #2e2f42;
+  align-items: center;
+}
+.footer-logo{
+  padding-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  }
+
+  .footer-text {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+} 
