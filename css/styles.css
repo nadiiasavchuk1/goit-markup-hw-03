@@ -28,7 +28,19 @@ a{
   text-align: center;
 }
 
- 
+ .section-title{
+  max-width: 218px;
+  margin: 0 auto -50px;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+text-transform: capitalize;
+  margin-bottom: 72px;
+  display: flex;
+ }
 
 
 h1, h2, h3, h4, h5, h6, p {
@@ -203,10 +215,12 @@ color: #f4f4fd;
   padding: 0;
   margin: 0;
   list-style: none;
+  
 }
 
 .advantages-item {
   flex-basis: calc((100% - 3 * 24px) / 4); /* ширина пункту */
+  width: 264px;
 }
 
 .advantages-subtitle {
@@ -224,18 +238,21 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+text-align: left;
+
+
+
 }
 
 /* section 3 */
 
 .team-section {
-  padding: 120px 0; /* відступи всередині секції */
+  padding: 120px 0;
   background-color: #f4f4fd;
   margin: 0 auto;
 }
 
 .text-title-team-section{
-font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -244,6 +261,8 @@ text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
   margin-bottom: 72px;
+  display: flex;
+  align-items: center;
 }
 
 .team-list {
@@ -251,12 +270,14 @@ text-transform: capitalize;
   gap: 24px;            
   padding: 0;
   margin: 0;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap;    /* elements stay on the same line, do not transfer to the secound row */
   justify-content: center;     
 }
 
 .team-item {
-  flex-basis: calc((100% - 3 * 24px) / 4); /* ширина кожного елемента */
+  display: flex;
+flex-wrap: wrap;
+  flex-basis: calc((100% - 3 * 24px) / 4); 
   border-radius: 0 0 4px 4px;             /* нижні заокруглення */
   background-color: #ffffff;
   width: 264px;       c
@@ -266,14 +287,26 @@ text-transform: capitalize;
 
 }
 
+.team-set{     /*not used*/
+display: flex;
+flex-wrap: wrap;
+order-radius: 0 0 4px 4px;             /* нижні заокруглення */
+  background-color: #ffffff;
+  width: 264px;       c
+  height: 380px;       
+  padding: 0px 0px 32px;  
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+
 
 .team-names-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;    /* Вирівнювання по центру */
-  margin-bottom: 8px;    /* Відступ між заголовком і параграфом */
+  text-align: center;    
+  margin-bottom: 8px;   
 }
 
 .team-info {
@@ -291,28 +324,33 @@ text-transform: capitalize;
     text-align: center; 
 }
 
+
+
 /* section 4 */
 
 .portfolio-section {
+
+  --items: 3;
+
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #f4f4fd;
 }
 
 .text-title-portfolio-section {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: center;
+
   margin-bottom: 72px;
+  
 }
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap; /* перенос на новий рядок при нестачі місця */
+  flex-wrap: wrap; 
   column-gap: 24px; /* горизонтальні відступи між елементами */
   row-gap: 48px; /* вертикальні відступи між елементами */
   list-style: none;
@@ -321,9 +359,13 @@ text-transform: capitalize;
 }
 
 .portfolio-item {
+
   flex-basis: calc((100% - 48px) / 3); /* ширина одного елемента у рядку */
   background-color: #ffffff;
   border-radius: 4px;
+  gap:24px;
+  width: 360px;
+height: 420px;
 }
 
 .portfolio-info {
@@ -367,6 +409,8 @@ text-transform: capitalize;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+    display: inline-block;
+  margin-bottom: 16px;
   }
 
   .footer-text {
