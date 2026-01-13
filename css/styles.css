@@ -28,6 +28,10 @@ a{
   text-align: center;
 }
 
+img {
+  display: block;
+}
+
  .section-title{
   max-width: 218px;
   margin: 0 auto -50px;
