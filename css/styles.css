@@ -24,8 +24,6 @@ a{
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  display: flex;
-  text-align: center;
 }
 
 img {
@@ -198,24 +196,25 @@ color: #f4f4fd;
 /* section 2 */
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  white-space: nowrap;
-}
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0, 0, 0, 0);
+   overflow: hidden;
+ }
 
 .advantages-section {
-  padding: 120px 0; /* відступи всередині секції */
+  padding: 120px 0; 
 }
 
 .advantages-list {
-  display: flex; /* горизонтальне розміщення елементів */
-  gap: 24px;     /* відстань між елементами списку */
+  display: flex; 
+  gap: 24px;     
   padding: 0;
   margin: 0;
   list-style: none;
@@ -223,7 +222,7 @@ color: #f4f4fd;
 }
 
 .advantages-item {
-  flex-basis: calc((100% - 3 * 24px) / 4); /* ширина пункту */
+  flex-basis: calc((100% - 3 * 24px) / 4); 
   width: 264px;
 }
 
@@ -233,7 +232,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
-margin-bottom: 8px; /* відступ між заголовком і параграфом */
+margin-bottom: 8px; 
 }
 
 .advantages-text {
@@ -279,10 +278,10 @@ text-transform: capitalize;
 }
 
 .team-item {
-  display: flex;
+  text-align: center;
 flex-wrap: wrap;
   flex-basis: calc((100% - 3 * 24px) / 4); 
-  border-radius: 0 0 4px 4px;             /* нижні заокруглення */
+  border-radius: 0 0 4px 4px;            
   background-color: #ffffff;
   width: 264px;       c
   height: 380px;       
@@ -294,7 +293,7 @@ flex-wrap: wrap;
 .team-set{     /*not used*/
 display: flex;
 flex-wrap: wrap;
-order-radius: 0 0 4px 4px;             /* нижні заокруглення */
+border-radius: 0 0 4px 4px;            
   background-color: #ffffff;
   width: 264px;       c
   height: 380px;       
@@ -314,7 +313,7 @@ order-radius: 0 0 4px 4px;             /* нижні заокруглення */
 }
 
 .team-info {
-  padding: 32px 0;      /* відступи всередині картки */
+  padding: 32px 0;     
   text-align: center;
 }
 
@@ -355,8 +354,8 @@ order-radius: 0 0 4px 4px;             /* нижні заокруглення */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap; 
-  column-gap: 24px; /* горизонтальні відступи між елементами */
-  row-gap: 48px; /* вертикальні відступи між елементами */
+  column-gap: 24px; 
+  row-gap: 48px; 
   list-style: none;
   padding: 0;
   margin: 0;
@@ -364,7 +363,7 @@ order-radius: 0 0 4px 4px;             /* нижні заокруглення */
 
 .portfolio-item {
 
-  flex-basis: calc((100% - 48px) / 3); /* ширина одного елемента у рядку */
+  flex-basis: calc((100% - 48px) / 3); 
   background-color: #ffffff;
   border-radius: 4px;
   gap:24px;
@@ -375,7 +374,7 @@ height: 420px;
 .portfolio-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  border-top: none; /* скидання верхньої обводки */
+  border-top: none; 
 }
 
 .portfolio-title-text {
@@ -413,7 +412,7 @@ height: 420px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
-    display: inline-block;
+  display: inline-block;
   margin-bottom: 16px;
   }
 
